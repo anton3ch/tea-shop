@@ -3,10 +3,10 @@ import teaImage from "./../img/tea.jpg";
 
 function Header(){
   return (
-    <React.Fragment>
+    <div className="header">
+      <img src={teaImage} alt="Tea" style={{width: 100}} />
       <h1>Tony's teas</h1>
-      <img src={teaImage} alt="Tea" />
-    </React.Fragment>
+    </div>
   );
 }
 
