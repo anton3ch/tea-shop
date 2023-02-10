@@ -25,8 +25,8 @@ function EditTeaForm (props) {
 }
 
 EditTeaForm.propTypes = {
-  ticket: PropTypes.object,
-  onEditTicket: PropTypes.func
+  tea: PropTypes.object,
+  onEditTea: PropTypes.func
 };
 
 export default EditTeaForm;

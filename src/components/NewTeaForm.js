@@ -3,18 +3,19 @@ import PropTypes from "prop-types";
 import { v4 } from 'uuid';
 import ReusableForm from "./ReusableForm";
 
-function NewTeaForm(props){
+export default function NewTeaForm(props){
 
   function handleNewTeaFormSubmission(event) {
     event.preventDefault();
     props.onNewTeaCreation({
-      names: event.target.name.value, 
+      name: event.target.name.value, 
       type: event.target.type.value, 
       origin: event.target.origin.value, 
-      price: event.target.price.value, 
+      price: event.target.price.value,
+      quantity: 130,  
       id: v4 ()
-  });
-  
+    });
+  }
 
   return (
     <React.Fragment>
@@ -23,11 +24,11 @@ function NewTeaForm(props){
         buttonText="Add Tea" />
     </React.Fragment>
   );
-}
+
 }
 
 NewTeaForm.propTypes = {
   onNewTeaCreation: PropTypes.func
 };
 
-export default NewTeaForm;
+

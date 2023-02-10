@@ -12,6 +12,7 @@ function TeaDetail(props){
         <li>Type: {tea.type}</li>
         <li>Origin: {tea.origin}</li>
         <li>Price: ${tea.price}</li>
+        <li>Quantity left: {tea.quantity}/130</li>
       </ul>
       <button onClick={ props.onClickingEdit }>Update tea</button>
       <button onClick={()=> props.onClickingDelete(tea.id) }>Remove tea</button>
@@ -23,7 +24,7 @@ function TeaDetail(props){
 TeaDetail.propTypes = {
   tea: PropTypes.object,
   onClickingDelete: PropTypes.func,
-  onClickingEdit: PropTypes.func // new code
+  onClickingEdit: PropTypes.func
 };
 
 export default TeaDetail;
