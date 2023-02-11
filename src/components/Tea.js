@@ -20,10 +20,10 @@ function Tea(props){
 }
 
 Tea.propTypes = {
-  name: PropTypes.string,
-  type: PropTypes.string,
-  origin: PropTypes.string,
-  price: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  origin: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
   quantity: PropTypes.number,
   id: PropTypes.string,
   whenTeaClicked: PropTypes.func,

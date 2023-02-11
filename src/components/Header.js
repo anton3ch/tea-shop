@@ -1,5 +1,5 @@
 import React from "react";
-import teaImage from "./../img/tea.jpg";
+import teaImage from "./../img/tea.png";
 
 function Header(){
   return (

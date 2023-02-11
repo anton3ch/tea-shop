@@ -96,10 +96,10 @@ class TeaControl extends React.Component {
       buttonText = "Add Tea";
     }
     return (
-      <React.Fragment>
+      <div className=' control bg-light p-5'>
         {currentlyVisibleState}
         <button onClick={this.handleClick}>{buttonText}</button>
-      </React.Fragment>
+      </div>
     );
   }
 
