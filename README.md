@@ -1,6 +1,48 @@
-# Getting Started with Create React App
+# Tea Shop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Tea Shop allows the owner to track their teas.
+
+#### By Anton Ch
+
+## Technologies Used
+
+- CSS
+- HTML
+- JavaScript
+- Node.js
+- React
+
+## Description
+
+![App Diagram](diagram.png)
+Tea Shop allows the owner to track their teas.
+
+## Setup/Installation Requirements
+
+- Click on or copy and paste this [GitHub Page](https://anton3ch.github.io/tea-shop/) into your preferred browser:<br>https://anton3ch.github.io/tea-shop/
+
+  **_OR_**
+
+- Clone this repository to your Desktop:
+  1. Your computer will need to have GIT installed. If you do not currently have GIT installed, follow [these](https://docs.github.com/en/get-started/quickstart/set-up-git) directions for installing and setting up GIT.
+  2. Once GIT is installed, clone this repository by typing following commands in your command line:
+     ```
+     ~ $ cd Desktop
+     ~/Desktop $ git clone https://github.com/anton3ch/tea-shop.git
+     ~/Desktop $ cd tea-shop
+     ```
+  3. Install necessary dependencies:
+     ```
+     ~/Desktop/tea-shop $ npm install
+     ```
+  4. Run:
+     ```
+     ~/Desktop/tea-shop $ npm run start
+     ```
+
+## Known Bugs
+
+---
 
 ## Available Scripts
 
@@ -45,26 +87,12 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[ISC](https://opensource.org/licenses/ISC)
 
-### Analyzing the Bundle Size
+Copyright (c) 02/10/2023 Anton Ch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
