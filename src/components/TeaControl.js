@@ -19,8 +19,11 @@ class TeaControl extends React.Component {
 
   handleSale = (id) => {
     const selectedTea = this.state.mainTeaList.filter(tea => tea.id === id)[0];
-    selectedTea.quantity = selectedTea.quantity - 1;
-    this.setState({selectedTea: selectedTea});
+    if(selectedTea.quantity > 0) {
+      selectedTea.quantity = selectedTea.quantity - 1;
+      this.setState({selectedTea: selectedTea});
+    }
+    
   }
   
   handleChangingSelectedTea = (id) => {

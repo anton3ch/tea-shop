@@ -2,6 +2,15 @@ import React, {useState, useEffect} from "react";
 import PropTypes from "prop-types";
 
 function Tea(props){
+
+  let quantityLeft = null;
+  let sellButton = null;
+  if(props.quantity > 0) {
+    quantityLeft = <p>Quantity left: {props.quantity}/130</p>;
+    sellButton = <button onClick = {() => props.whenTeaSold(props.id)}> SELL </button>
+  } else {
+    quantityLeft = <p>Quantity left: SOLD OUT</p>;
+  }
   return (
     <div className="border border-secondary text-center">
       <div>
@@ -9,11 +18,11 @@ function Tea(props){
         <p>Type: {props.type}</p>
         <p>Origin: {props.origin}</p>
         <p>Price: {props.price}</p>
-        <p>Quantity left: {props.quantity}/130</p>
+        {quantityLeft}
         <button onClick = {() => props.whenTeaClicked(props.id)}> Details </button>
       </div>
       <hr/>
-      <button onClick = {() => props.whenTeaSold(props.id)}> SELL </button>
+      {sellButton}
       <hr/>
     </div>
   );

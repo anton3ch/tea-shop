@@ -3,6 +3,14 @@ import PropTypes from "prop-types";
 
 function TeaDetail(props){
   const { tea, onClickingDelete } = props;
+  
+  let quantityLeft = null;
+  if(tea.quantity > 0) {
+    quantityLeft = <li>Quantity left: {tea.quantity}/130</li>;
+  } else {
+    quantityLeft = <li>Quantity left: SOLD OUT</li>;
+  }
+
 
   return (
     <React.Fragment>
@@ -12,7 +20,7 @@ function TeaDetail(props){
         <li>Type: {tea.type}</li>
         <li>Origin: {tea.origin}</li>
         <li>Price: ${tea.price}</li>
-        <li>Quantity left: {tea.quantity}/130</li>
+        {quantityLeft}
       </ul>
       <button onClick={ props.onClickingEdit }>Update tea</button>
       <button onClick={()=> props.onClickingDelete(tea.id) }>Remove tea</button>
